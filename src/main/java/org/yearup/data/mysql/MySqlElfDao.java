@@ -93,7 +93,7 @@ public class MySqlElfDao extends MySqlDaoBase implements ElfDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
+        return null;
     }
 
     @Override
