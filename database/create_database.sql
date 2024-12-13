@@ -57,26 +57,26 @@ INSERT INTO roles (name) VALUES
 
 -- Insert seed data into elves
 INSERT INTO elves (name, image_url, elf_rank, role_id) VALUES
-('Buddy', 'https://example.com/images/buddy.jpg', 1, 1),
-('Jingle', 'https://example.com/images/jingle.jpg', 2, 1),
-('Twinkle', 'https://example.com/images/twinkle.jpg', 3, 2),
-('Sparkle', 'https://example.com/images/sparkle.jpg', 4, 2),
-('Frost', 'https://example.com/images/frost.jpg', 5, 3),
-('Snowflake', 'https://example.com/images/snowflake.jpg', 6, 3),
-('Dasher', 'https://example.com/images/dasher.jpg', 7, 3),
-('Comet', 'https://example.com/images/comet.jpg', 8, 4),
-('Blizzard', 'https://example.com/images/blizzard.jpg', 9, 4),
-('Peppermint', 'https://example.com/images/peppermint.jpg', 10, 4),
-('Holly', 'https://example.com/images/holly.jpg', 11, 5),
-('Jolly', 'https://example.com/images/jolly.jpg', 12, 5),
-('Elvis', 'https://example.com/images/elvis.jpg', 13, 5), -- Elvis look-alike
-('Rudolph', 'https://example.com/images/rudolph.jpg', 14, 3),
-('Tinsel', 'https://example.com/images/tinsel.jpg', 15, 1),
-('Gingerbread', 'https://example.com/images/gingerbread.jpg', 16, 2),
-('Icicle', 'https://example.com/images/icicle.jpg', 17, 3),
-('Merry', 'https://example.com/images/merry.jpg', 18, 4),
-('Zombie', 'https://example.com/images/zombie.jpg', 19, 5), -- Zombie elf
-('Chestnut', 'https://example.com/images/chestnut.jpg', 20, 2);
+('Buddy', 'http://localhost:8080/buddy.png', 1, 1),
+('Jingle', 'http://localhost:8080/jingle.png', 2, 1),
+('Twinkle', 'http://localhost:8080/twinkle.png', 3, 2),
+('Sparkle', 'http://localhost:8080/buddy.png', 4, 2),
+('Frost', 'http://localhost:8080/frost.png', 5, 3),
+('Snowflake', 'http://localhost:8080/buddy.png', 6, 3),
+('Dasher', 'http://localhost:8080/buddy.png', 7, 3),
+('Comet', 'http://localhost:8080/buddy.png', 8, 4),
+('Blizzard', 'http://localhost:8080/buddy.png', 9, 4),
+('Peppermint', 'http://localhost:8080/buddy.png', 10, 4),
+('Holly', 'http://localhost:8080/buddy.png', 11, 5),
+('Jolly', 'http://localhost:8080/buddy.png', 12, 5),
+('Elvis', 'http://localhost:8080/buddy.png', 13, 5), -- Elvis look-alike
+('Rudolph', 'http://localhost:8080/buddy.png', 14, 3),
+('Tinsel', 'http://localhost:8080/buddy.png', 15, 1),
+('Gingerbread', 'http://localhost:8080/buddy.png', 16, 2),
+('Icicle', 'http://localhost:8080/buddy.png', 17, 3),
+('Merry', 'http://localhost:8080/buddy.png', 18, 4),
+('Zombie', 'http://localhost:8080/buddy.png', 19, 5), -- Zombie elf
+('Chestnut', 'http://localhost:8080/buddy.png', 20, 2);
 
 /*  INSERT Users  */
 INSERT INTO users (username, hashed_password, role) 

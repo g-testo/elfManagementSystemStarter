@@ -4,48 +4,48 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
-import org.yearup.data.ElfDao;
-import org.yearup.models.Elf;
+import org.yearup.models.Role;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("api/elves")
+@RequestMapping("api/roles")
 @CrossOrigin(origins = "*")
 @PreAuthorize("permitAll()")
-public class ElfController {
-    private ElfDao elfDao;
+public class RoleController {
+    private RoleDao roleDao;
 
     @Autowired
-    public ElfController(ElfDao elfDao){
-        this.elfDao = elfDao;
+    public RoleController(RoleDao roleDao){x
+        this.roleDao = roleDao;
     }
 
     @GetMapping("{id}")
-    public Elf getElfById(@PathVariable int id){
-        return elfDao.getById(id);
+    public Role getRoleById(@PathVariable int id){
+        return roleDao.getById(id);
     }
 
     @GetMapping
-    public List<Elf> getAllElves(){
-        return elfDao.getAll();
+    public List<Role> getAllRoles(){
+        return roleDao.getAll();
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Elf createElf(@RequestBody Elf elf){
-        return elfDao.create(elf);
+    public Role createRole(@RequestBody Role role){
+        return roleDao.create(role);
     }
 
     @PutMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void updateElf(@PathVariable int id, @RequestBody Elf elf){
-        elfDao.update(id, elf);
+    public void updateRole(@PathVariable int id, @RequestBody Role role){
+        roleDao.update(id, role);
     }
 
     @DeleteMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteElf(@PathVariable int id){
-        elfDao.delete(id);
+    public void deleteRole(@PathVariable int id){
+        roleDao.delete(id);
     }
 }
+
